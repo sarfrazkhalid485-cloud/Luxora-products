@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LUXORA | Watches, iPhones & MacBooks</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="Luxora home"><span class="logo-mark">L</span><span class="brand-word">LUX<span>ORA</span></span></a>
+  <nav class="main-nav">
+    <a href="#about"><span class="nav-thumb">✦</span>About Us</a>
+    <a href="#contact"><span class="nav-thumb">☎</span>Contact Us</a>
+    <button class="cart-pill" id="openCart" aria-label="Open cart"><span class="nav-thumb cart-thumb">🛒</span>Add to Cart <b id="cartCount">0</b></button>
+  </nav>
+</header>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">TECH • TIME • STYLE</p>
+    <h1>Upgrade your<br><span>everyday.</span></h1>
+    <p>Shop watches, iPhones and MacBooks in one place.</p>
+    <a class="gold-btn" href="#products">Explore collection ↘</a>
+  </div>
+  <div class="hero-art">
+    <div class="orb orb-one"></div><div class="orb orb-two"></div>
+    <div class="device laptop"><div class="screen"></div><div class="base"></div></div>
+    <div class="device phone"><div class="camera"></div></div>
+    <div class="watch"><div class="strap"></div><div class="face"><div class="hand"></div></div><div class="strap bottom"></div></div>
+    <div class="hero-label">THE LUXORA EDITION</div>
+  </div>
+</section>
+<div class="trust-strip"><span>✦ Curated tech</span><span>✦ Secure checkout flow</span><span>✦ Pakistan-wide ordering</span></div>
+<main id="products" class="main">
+  <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2>Find your next favourite.</h2></div>
+  <input id="search" class="search" placeholder="Search products…" aria-label="Search products"></div>
+  <div class="filters" id="filters">
+    <button class="filter active" data-category="All">All products</button>
+    <button class="filter" data-category="iPhone">iPhones</button>
+    <button class="filter" data-category="MacBook">MacBooks</button>
+    <button class="filter" data-category="Watch">Watches</button>
+  </div>
+  <p class="notice">Prices shown are editable starter estimates in PKR, with a Rs. 2,000 markup built in. Confirm current local market prices, condition, storage and warranty before publishing.</p>
+  <div id="productGrid" class="product-grid"></div>
+</main>
+<section id="about" class="about"><p class="eyebrow">WHY LUXORA</p><h2>Good tech. Great style.</h2><p>LUXORA brings watches, iPhones and MacBooks together in one easy shopping experience. Prices and availability are confirmed before an order is fulfilled.</p></section>
+<section id="contact" class="about contact"><p class="eyebrow">GET IN TOUCH</p><h2>We’re here to help.</h2><p>Questions about a product or order? Reach us through WhatsApp or Instagram.</p>
+<div class="social-buttons"><a class="social-btn whatsapp" href="https://wa.me/923065785086" target="_blank" rel="noopener">☏ WhatsApp</a><a class="social-btn instagram" href="https://www.instagram.com/whose._.safi/" target="_blank" rel="noopener">◎ Instagram</a></div></section>
+<footer><a class="brand" href="#"><span class="logo-mark">L</span><span class="brand-word">LUX<span>ORA</span></span></a><p>© 2026 LUXORA. Product availability and prices may change.</p></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Shopping cart</h2></div><button class="close" id="closeCart" aria-label="Close cart">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-bottom"><div class="total-line"><span>Subtotal</span><strong id="cartSubtotal">Rs. 0</strong></div><button class="gold-btn full" id="checkoutBtn">Continue to payment →</button><p class="small">Shipping and final availability are confirmed by the seller.</p></div>
+</aside>
+
+<section class="checkout-page" id="checkoutPage">
+  <div class="checkout-wrap">
+    <button class="back-link" id="backToShop">← Back to shopping</button>
+    <p class="eyebrow">ALMOST YOURS</p><h2>Checkout</h2>
+    <div class="checkout-layout">
+      <form id="checkoutForm" class="checkout-form">
+        <h3>Delivery details</h3>
+        <label>Full name<input name="customer" required placeholder="Your full name"></label>
+        <label>Phone number<input name="phone" required inputmode="tel" placeholder="03xx xxxxxxx"></label>
+        <label>Delivery address<textarea name="address" required rows="3" placeholder="House, street, city"></textarea></label>
+        <h3>Payment method</h3>
+        <label class="payment-option"><input type="radio" name="payment" value="Cash on Delivery" checked> <span><b>Cash on Delivery</b><small>Pay when your order arrives</small></span></label>
+        <label class="payment-option"><input type="radio" name="payment" value="Bank Transfer"> <span><b>Bank Transfer</b><small>Seller will share verified account details after order confirmation</small></span></label>
+        <label class="payment-option"><input type="radio" name="payment" value="Easypaisa / JazzCash"> <span><b>Easypaisa / JazzCash</b><small>Payment instructions provided by seller</small></span></label>
+        <button class="gold-btn full" type="submit">Place order</button>
+        <p class="small">Payment choices are collected for the order request. Online payments are not charged by this demo.</p>
+      </form>
+      <div class="order-summary"><h3>Order summary</h3><div id="checkoutItems"></div><div class="total-line"><span>Total</span><strong id="checkoutTotal">Rs. 0</strong></div></div>
+    </div>
+  </div>
+</section>
+<div class="modal" id="successModal"><div class="modal-card"><div class="success-mark">✓</div><h2>Order details prepared</h2><p id="successText">Your demo order is ready.</p><p class="small">Connect WhatsApp, email or an order-management service to receive real orders.</p><button class="gold-btn full" id="finishOrder">Back to store</button></div></div>
+<script src="app.js"></script>
+</body>
+</html>
