@@ -1,0 +1,13 @@
+{
+  "name": "luxora-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LUXORA ecommerce starter with Express order API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
