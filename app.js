@@ -1,5 +1,5 @@
 const products = [
-{id:1,name:"iPhone XS",category:"iPhone",price:42000,desc:"64GB • Space Gray",icon:"📱"},
+{id:1,name:"iPhone XS",category:"iPhone",price:42000,desc:"64GB • Space Gray",icon:"https://drive.google.com/file/d/1KcbPZWHA2Y_7S3Q8hoXqsZJ7ED3GA5C_/view?usp=drivesdk"},
 {id:2,name:"iPhone 11",category:"iPhone",price:57000,desc:"128GB • Black",icon:"📱"},
 {id:3,name:"iPhone 12",category:"iPhone",price:74000,desc:"128GB • Black",icon:"📱"},
 {id:4,name:"iPhone 13",category:"iPhone",price:99000,desc:"128GB • Midnight",icon:"📱"},
